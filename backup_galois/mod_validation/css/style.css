@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:5px;	
+}
+
+#box_cadastro{
+	float: left;
+	width: 50%;
+	/* margin:0 auto; */
+	border:0px none;
+}
+#grupo{
+	float:left;
+	width: 100%;
+	height:45px;
+	margin: 0px 0px 10px 0px;
+}
+#grupo2{
+	width: 10%;
+	height: 45px;
+	margin-right: 2%;	
+	float: left;
+}
+#grupo3{
+	width: 86%;
+	height: 45px;
+	margin-left: 2%;		
+	float: left;
+}
+#grupo4{
+	width: 10%;
+	height: 45px;
+	padding: 0 2% 0 0%;		
+	float: left;
+}
+#grupo5{
+	width: 34%;
+	height: 45px;
+	padding: 0 4% 0 2%;	
+	float: left;
+}
+#grupo6{
+	width: 34%;
+	height: 45px;
+	padding: 0 0 0 2%;	
+	float: left;
+}
+#grupo_mensagem{
+	float:left;
+	width: 100%;
+	height: 100px;
+	margin: 0px 0px 10px 0px;
+}
+#obs{
+	float: left;
+	width: 80%;
+	height:30px;
+	text-align: left;
+	color:#F00;	
+	font-size: 12px;
+}
+label{
+	float:left;
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	font-weight: 900;
+}
+.text{
+	width: 100%;
+	height: 18px;
+	margin: 0;	
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+}
+.text2{
+	width: 100%;
+	margin: 0;	
+	height: 24px;
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+}
+.text3{
+	width: 93%;
+	height: 20px;
+	margin: 0;	
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+}
+.text4{
+	width: 100%;
+	height: 18px;
+	margin: 0;	
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+}
+.text5{
+	width: 100%;
+	height: 18px;
+	margin: 0;	
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+}
+.text6{
+	width: 100%;
+	height: 18px;
+	margin: 0;	
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+}
+.text7{
+	width: 100%;
+	height: 20px;
+	margin: 0;	
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+}
+.text8{
+	width: 100%;
+	height: 70px;
+	margin: 0;	
+	border: 1px solid #abadb3;
+	color: #000000;
+	font-weight: normal;
+	resize: none;
+}
+#bt_envia {    
+    float: left;
+    width: 18%;
+    text-align: right;    
+    margin-left: 2%;
+}
+.btn{
+	float:left;
+	width: 70px;
+	height: 20px;
+	margin:0px;	
+	background: #aa2222;
+	border: 1px solid #aa2222; 
+	text-transform: lowercase;
+	font-weight: 100;
+	color: white;
+	line-height: 10px;
+	font-family: arial;
+	font-size: 12px;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade"> 
+        <name>FormValidationOuvidoria</name>
+        <creationDate>Abril 2014</creationDate>
+        <author>Henrique Gallo</author>
+        <authorEmail>henrique@osnetwork.com.br</authorEmail>
+        <copyright>2014 - Todos direitos reservados à IME-USP</copyright>
+        <license>GNU</license>
+        <version>1.0.0</version>    
+        <description>FormValidationOuvidoria</description>
+		<!--Aqui vai a descricao do diretorio site e seus arquivos-->
+        <files folder="site">
+            <filename>index.html</filename>
+			<filename>send_mail.php</filename>
+            <filename module="mod_validation">mod_validation.php</filename>
+			<filename>loader.gif</filename>                
+			<folder>css</folder> 
+			<folder>js</folder>
+            <folder>phpmailer</folder>           
+        </files>
+</extension> 
