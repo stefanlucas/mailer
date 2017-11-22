@@ -37,7 +37,7 @@ try {
     
     if ($user['email'] == $email) {
     	if ($user['active']) {
-   			echo "mostra message_form"
+   			echo "mostra message_form";
    			//include 'message_form.php';
     		die();
     	}
