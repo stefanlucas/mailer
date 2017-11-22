@@ -7,8 +7,8 @@ $hash = md5(rand(0,1000));
 // Conectando banco de dados
 $servername = "localhost";
 $username = "root";
-$password = "123456";
-$dbname = "ouvidoria";
+$password = "webmaster123";
+$dbname = "galois";
 
 if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])) {
 	$secret = '6Lej5TUUAAAAAN9sKO5wPqXp2iXQbIri9raBn4nm';
@@ -32,7 +32,7 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "SELECT email, active FROM user WHERE email = '$email'";
+    $sql = "SELECT email, active FROM j456_ouvidoria WHERE email = '$email'";
     $user = $conn->query($sql)->fetch(PDO::FETCH_ASSOC);
     
     if ($user['email'] == $email) {
