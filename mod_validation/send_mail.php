@@ -42,11 +42,11 @@ try {
     		die();
     	}
     	else {
-    		$sql = "UPDATE user SET hash = '$hash', expiration_date=(NOW() + INTERVAL 1 DAY) WHERE email = '$email'";
+    		$sql = "UPDATE ouvidoria SET hash = '$hash', expiration_date=(NOW() + INTERVAL 1 DAY) WHERE email = '$email'";
     	}
     }
     else {
-    	$sql = "INSERT INTO user (email, hash, expiration_date)
+    	$sql = "INSERT INTO ouvidoria (email, hash, expiration_date)
     	VALUES ('$email', '$hash', (NOW() + INTERVAL 1 DAY))";
     }
     
