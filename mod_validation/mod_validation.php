@@ -49,27 +49,22 @@ $(function($) {
 </script>
 
 <div id="box_cadastro">
-	<form id="formulario" action="send_mail.php" method="post">   
-				
+	<form id="formulario" action="<?php echo JURI::root().'modules/mod_validation/send_mail.php';?>" method="post" >   
+	<p>Caso seja a primeira vez que esteja usando este e-mail, enviaremos um link para validá-lo.</p>
 	<div id="grupo">
-		<label>Nome:</label>
-		<input type="text" name="nome" id="nome" class="text"  />
-	</div>
-               
-	<div id="grupo">
-		<label>*E-mail:</label>
+		<label>E-mail:</label>
 		<input type="text" name="email" id="email" class="text"  />
 	</div>		
-                				
-	<div id="grupo_mensagem"> 
-		<label>*Mensagem:</label>
-		<textarea name="mensagem" id="mensagem" rows="4" cols="40" class="text8"></textarea>
-	</div> 		
-
+	<?php
+		if (isset($error)) {
+			echo '<span style="color:red">'.$error.'</span><br>';
+		}
+	?>
+	<div id="grupo" style="margin-bottom: 50px">
+	<div class="g-recaptcha" data-sitekey="6Lej5TUUAAAAAJOdAI-iz9_4z8T-pf7joQESbnkh"></div>	      
+	</div>
 	<div id="grupo">							
-		<div id="obs">*Campos obrigatórios.</div>	
 		<div id="bt_envia"><input type="submit" value="ENVIAR" class="btn" /></div>	
 	</div>			        
-				      
 	</form>
 </div>
